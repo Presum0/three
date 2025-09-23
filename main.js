@@ -16,5 +16,5 @@ camera.position.z = 5;
 
 function animate() {
     renderer.render( scene, camera );
-  }
-  renderer.setAnimationLoop( animate );
+}
+renderer.setAnimationLoop( animate );
