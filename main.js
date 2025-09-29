@@ -19,6 +19,11 @@ function main(){
     const cube = new THREE.Mesh(geometry, material);
     scene.add(cube);
     renderer.render(scene,camera);
+    const color = 0xFFFFFF;
+    const intensity = 3;
+    const light = new THREE.DirectionalLight(color, intensity);
+    light.position.set(-1,2,4);
+    scene.add(light);
 
     function render(time){
         time*=0.001;
